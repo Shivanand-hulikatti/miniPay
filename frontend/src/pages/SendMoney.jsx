@@ -40,7 +40,7 @@ const SendMoney = () => {
                 />
                 </div>
                 <button onClick={async()=>{
-                    await axios.post("http://localhost:3000/api/v1/account/transfer",{
+                    await axios.post("https://minipayb.onrender.com/api/v1/account/transfer",{
                         to:id,
                         amount:amount,
                     },{
